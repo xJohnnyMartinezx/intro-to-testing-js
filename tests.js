@@ -14,6 +14,8 @@ describe('helloWorld', function() {
     });
 });
 
+// Unit test for the sayHello function
+
 describe("sayHello", function() {
     it("should be a defined function", function() {
         expect(typeof sayHello).toBe("function");
@@ -46,7 +48,38 @@ describe("sayHello", function() {
         expect(sayHello("")).toBe("Hello, World!")
     })
 
+})
 
+// describe("isFive", function (){
+//     it('should be a defined function named "isFive".', function () {
+//         expect(typeof isFive).toBe("function");
+//     });
+//     it ('should always return a Boolean when called', function () {
+//         expect(typeof isFive()).toBe("boolean")
+//     })
+//     it ("should return true when the number 5 is passed", function () {
+//         expect(isFive(5)).toBe(true)
+//     })
+//     it ('should return true when the string "5" is passed', function () {
+//         expect(isFive("5")).toBe(true)
+//     })
+//     it ('should return true when the string "FIVE" is passed', function () {
+//         expect(typeof isFive("FIVE")).toBe(true)
+//     })
+//
+
+// })
+
+describe('isEven', function () {
+    it('should be a defined function named "isEven".', function () {
+        expect(typeof isEven).toBe("function")
+    });
+    it('should retun a boolean', function () {
+        expect(typeof isEven()).toBe("boolean")
+    });
+    it('should return true when the number 2 is passed', function () {
+        expect(isEven(2)).toBe(true)
+    });
 
 });
 

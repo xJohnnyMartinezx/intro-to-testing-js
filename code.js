@@ -21,9 +21,24 @@ function sayHello(input) {
     //     return "Hello, World!";
     // } else {
 
-    if (input === undefined || input === true || input === false || input === null || input === ""){
-        return "Hello, World!"
+    if (input === undefined || typeof input === "boolean" || input === null || input === ""){
+        return "Hello, World!";
     } else {
         return "Hello, " + input + "!";
       }
     }
+//
+// function isFive(input) {
+//     if (input === undefined) {
+//         return false
+//     } else if (input === 5 || input.toLowerCase() === "five"|| imput === "5" || input !== undefined) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+function isEven(input){
+return true;
+}
+
