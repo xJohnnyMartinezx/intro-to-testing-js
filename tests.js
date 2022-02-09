@@ -21,15 +21,32 @@ describe("sayHello", function() {
     it("should return a string when called", function () {
         expect(typeof sayHello()).toBe("string");
         });
-    it('should return the string "Hello, Jane!" when called', function() {
+    it('should return the string "Hello, Jane!" when input is Jane', function() {
         expect(sayHello("Jane")).toBe("Hello, Jane!")
     });
-    it ('should return the string "Hello, Alex!" when called', function() {
+    it ('should return the string "Hello, Alex!" when input is Alex', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex!")
     })
-    it ('should return the string "Hello, Pat!" when called', function () {
+    it ('should return the string "Hello, Pat!" when input is Pat', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     })
+    it ('should return the string "Hello, World!" when input is undefined', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    })
+    it ('should return the string "Hello, World!" when input is true', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    })
+    it ('should return the string "Hello, World!" when input is false', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    })
+    it ('should return the string "Hello, World!" when input is null', function () {
+        expect(sayHello(null)).toBe("Hello, World!")
+    })
+    it ('should return the string "Hello, World!" when input is an empty string', function () {
+        expect(sayHello("")).toBe("Hello, World!")
+    })
+
+
 
 });
 
